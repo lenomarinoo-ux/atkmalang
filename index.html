@@ -49,6 +49,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/img/all%20image/alat-tulis-hero-index.webp" as="image" fetchpriority="high">
   <link rel="preload" href="assets/css/main.css" as="style">
   <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
 
@@ -165,13 +166,15 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
 </head>
 
 <body class="index-page">
@@ -181,8 +184,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-atk.webp" alt="ATK Malang">
-        <h1 class="sitename">ATK<span>Malang</span></h1>
+        <img src="assets/img/logo-atk.webp" alt="ATK Malang" width="40" height="40">
+        <span class="sitename">ATK<span>Malang</span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -200,7 +203,7 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" tabindex="0" aria-label="Toggle Mobile Navigation"></i>
       </nav>
 
       <a class="btn-getstarted" href="https://wa.me/6288989643555">Hubungi Kami</a>
@@ -217,7 +220,7 @@
           <div class="col-lg-5">
             <div class="hero-image" data-aos="fade-right" data-aos-delay="100">
               <img src="assets/img/all image/alat-tulis-hero-index.webp" alt="ATK Malang Store"
-                class="img-fluid main-image">
+                class="img-fluid main-image" width="800" height="600" fetchpriority="high">
               <div class="floating-card emergency-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-content">
                   <i class="bi bi-telephone-fill"></i>
@@ -316,7 +319,7 @@
             <div class="image-grid">
               <div class="primary-image">
                 <img src="assets/img/all image/solusi-kebutuhan-atk.webp" alt="Toko Alat Tulis Kantor ATKMalang"
-                  class="img-fluid">
+                  class="img-fluid" width="600" height="600" loading="lazy" decoding="async">
                 <div class="certification-badge">
                   <i class="bi bi-award"></i>
                   <span>Toko Terpercaya</span>
@@ -325,11 +328,11 @@
               <div class="secondary-images">
                 <div class="small-image">
                   <img src="assets/img/all image/kebutuhan-atk-malang.webp" alt="Layanan Pelanggan ATKMalang"
-                    class="img-fluid">
+                    class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="small-image">
                   <img src="assets/img/all image/solusi-atk-kebutuhan.webp" alt="Pengemasan Produk ATKMalang"
-                    class="img-fluid">
+                    class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -342,7 +345,7 @@
                   <i class="bi bi-star-fill"></i>
                 </div>
                 <div class="highlight-content">
-                  <h4>Kepuasan Pelanggan Utama Kami</h4>
+                  <h4 role="heading" aria-level="3">Kepuasan Pelanggan Utama Kami</h4>
                   <p>Setiap pelanggan berhak mendapatkan pelayanan terbaik, produk original, dan pengiriman yang cepat
                     sesuai dengan pesanan.</p>
                 </div>
@@ -448,7 +451,7 @@
               <div class="col-lg-6 order-lg-2">
                 <div class="department-visual">
                   <div class="image-wrapper">
-                    <img src="assets/img/all image/value-kebutuhan-atk.webp" alt="Layanan Pelanggan" class="img-fluid">
+                    <img src="assets/img/all image/value-kebutuhan-atk.webp" alt="Layanan Pelanggan" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
                   </div>
                 </div>
               </div>
@@ -631,8 +634,7 @@
                 <i class="fas fa-copy"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/stok-kertas-hvs-kantor-dalam-jumlah-besar.webp" alt="Kertas HVS & F4 Grosir per Karton" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/produk/stok-kertas-hvs-kantor-dalam-jumlah-besar.webp" alt="Kertas HVS & F4 Grosir per Karton" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Kertas HVS & F4 Grosir per Karton</h3>
@@ -652,8 +654,7 @@
                 <i class="fas fa-print"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/botol-toner-mesin-fotokopi.webp" alt="Tinta & Toner Printer Lengkap"
-                  class="img-fluid" loading="lazy">
+                <img src="assets/img/produk/botol-toner-mesin-fotokopi.webp" alt="Tinta & Toner Printer Lengkap" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Tinta & Toner Printer Lengkap</h3>
@@ -673,8 +674,7 @@
                 <i class="fas fa-fingerprint"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/alat-absensi-sensor-wajah.webp" alt="Mesin Absensi Fingerprint & Wajah" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/produk/alat-absensi-sensor-wajah.webp" alt="Mesin Absensi Fingerprint & Wajah" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Mesin Absensi Fingerprint & Wajah</h3>
@@ -694,8 +694,7 @@
                 <i class="fas fa-folder-open"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/persediaan-map-lever-arch-grosir.webp" alt="Perlengkapan Kearsipan & Manajemen Dokumen" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/produk/persediaan-map-lever-arch-grosir.webp" alt="Perlengkapan Kearsipan & Manajemen Dokumen" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Perlengkapan Kearsipan & Manajemen Dokumen</h3>
@@ -715,8 +714,7 @@
                 <i class="fas fa-pen-nib"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/display-pulpen-dan-pensil-grosir.webp" alt="Alat Tulis per Pack/Lusin Lengkap"
-                  class="img-fluid" loading="lazy">
+                <img src="assets/img/produk/display-pulpen-dan-pensil-grosir.webp" alt="Alat Tulis per Pack/Lusin Lengkap" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Alat Tulis per Pack/Lusin Lengkap</h3>
@@ -736,8 +734,7 @@
                 <i class="fas fa-video"></i>
               </div>
               <div class="service-image">
-                <img src="assets/img/produk/proyektor-dan-layar-presentasi-siap-pakai.webp" alt="Proyektor Interaktif & Layar Presentasi" class="img-fluid"
-                  loading="lazy">
+                <img src="assets/img/produk/proyektor-dan-layar-presentasi-siap-pakai.webp" alt="Proyektor Interaktif & Layar Presentasi" class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
               <div class="service-content">
                 <h3>Proyektor Interaktif & Layar Presentasi</h3>
@@ -773,7 +770,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card shadow-sm h-100 rounded-4 border-0 bg-light overflow-hidden">
               <div class="position-relative">
-                <img src="assets/img/produk/paket-pelajar-atk.webp" alt="Paket Welcome" class="w-100"
+                <img src="assets/img/produk/paket-pelajar-atk.webp" alt="Paket Welcome" class="w-100" width="400" height="400" loading="lazy" decoding="async"
                   style="height: 240px; object-fit: cover;">
                 <div class="position-absolute bottom-0 w-100"
                   style="height: 100px; background: linear-gradient(to top, #f8f9fa 0%, rgba(32, 201, 151, 0.3) 60%, transparent 100%);">
@@ -800,7 +797,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card shadow-sm h-100 rounded-4 border-0 bg-light overflow-hidden">
               <div class="position-relative">
-                <img src="assets/img/produk/paket-basic-kantor-atk.webp" alt="Paket Basic Kantor" class="w-100"
+                <img src="assets/img/produk/paket-basic-kantor-atk.webp" alt="Paket Basic Kantor" class="w-100" width="400" height="400" loading="lazy" decoding="async"
                   style="height: 240px; object-fit: cover;">
                 <div class="position-absolute bottom-0 w-100"
                   style="height: 100px; background: linear-gradient(to top, #f8f9fa 0%, rgba(32, 201, 151, 0.3) 60%, transparent 100%);">
@@ -829,7 +826,7 @@
               <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 rounded-pill"
                 style="z-index: 10;">Terlaris</span>
               <div class="position-relative">
-                <img src="assets/img/produk/paket-eksekutif-kantor-atk.webp" alt="Paket Eksekutif" class="w-100"
+                <img src="assets/img/produk/paket-eksekutif-kantor-atk.webp" alt="Paket Eksekutif" class="w-100" width="400" height="400" loading="lazy" decoding="async"
                   style="height: 240px; object-fit: cover;">
                 <div class="position-absolute bottom-0 w-100"
                   style="height: 100px; background: linear-gradient(to top, #f8f9fa 0%, rgba(32, 201, 151, 0.3) 60%, transparent 100%);">
@@ -878,7 +875,7 @@
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="testimonial-item">
-              <img src="assets/img/person/hawaaa.webp" class="testimonial-img" alt="Budi Santoso">
+              <img src="assets/img/person/hawaaa.webp" class="testimonial-img" alt="Budi Santoso" width="100" height="100" loading="lazy" decoding="async">
               <h3>Nadiraa</h3>
               <h4>Guru SMA</h4>
               <div class="stars">
@@ -895,7 +892,7 @@
           </div><!-- End testimonial item -->
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="testimonial-item">
-              <img src="assets/img/person/anggunly.webp" class="testimonial-img" alt="Siti Aminah">
+              <img src="assets/img/person/anggunly.webp" class="testimonial-img" alt="Siti Aminah" width="100" height="100" loading="lazy" decoding="async">
               <h3>Anggunlyy</h3>
               <h4>Staf Administrasi</h4>
               <div class="stars">
@@ -1017,7 +1014,7 @@
             <div class="col-lg-6">
               <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
                 <img src="assets/img/all image/cta-kebutuhan-atk-kerja.webp" alt="Alat Tulis Berkualitas"
-                  class="img-fluid">
+                  class="img-fluid" width="600" height="400" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
@@ -1097,7 +1094,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" style="max-height: 40px;">
+            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" width="40" height="40" loading="lazy" decoding="async" style="max-height: 40px;">
             <span class="sitename">ATKMalang</span>
           </a>
           <div class="footer-contact pt-3">
@@ -1107,15 +1104,15 @@
             <p><strong>Email:</strong> <span>info@atkmalang.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/atkmalang"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://web.facebook.com/profile.php?id=61580593539769"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/atkmalang"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@atkmalang"><i class="bi bi-tiktok"></i></a>
+            <a href="https://twitter.com/atkmalang" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61580593539769" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/atkmalang" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/@atkmalang" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Tautan Pintas</h4>
+          <h4 role="heading" aria-level="2">Tautan Pintas</h4>
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="about.html">Tentang Kami</a></li>
@@ -1126,7 +1123,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Paket Unggulan</h4>
+          <h4 role="heading" aria-level="2">Paket Unggulan</h4>
           <ul>
             <li><a href="paket-pelajar.html">Paket Pelajar</a></li>
             <li><a href="paket-basic-kantor.html">Paket Basic Kantor</a></li>
@@ -1136,7 +1133,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Kategori Populer</h4>
+          <h4 role="heading" aria-level="2">Kategori Populer</h4>
           <ul>
             <li><a href="mesin-elektronik-kantor.html">Mesin & Elektronik Kantor</a></li>
             <li><a href="pengadaan-kontrak-supply.html">Pengadaan &amp; Kontrak Supply</a></li>
@@ -1145,7 +1142,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Jam Operasional</h4>
+          <h4 role="heading" aria-level="2">Jam Operasional</h4>
           <ul>
             <li><span>Senin - Jumat: 08:00 - 20:00</span></li>
             <li><span>Sabtu: 08:00 - 18:00</span></li>
@@ -1167,24 +1164,24 @@
   <a href="https://wa.me/6288989643555" target="_blank"
     class="wa-float d-flex align-items-center justify-content-center" aria-label="WhatsApp Kami"><i
       class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
