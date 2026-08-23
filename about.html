@@ -181,7 +181,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-atk.webp" alt="ATK Malang">
+        <img src="assets/img/logo-atk.webp" alt="ATK Malang" width="40" height="40" loading="lazy" decoding="async">
         <h1 class="sitename">ATK<span>Malang</span></h1>
       </a>
 
@@ -200,7 +200,7 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" tabindex="0" aria-label="Toggle Mobile Navigation"></i>
       </nav>
 
       <a class="btn-getstarted" href="https://wa.me/6288989643555">Hubungi Kami</a>
@@ -221,7 +221,7 @@
             <!-- Decorative background offset -->
             <div class="bg-primary-light position-absolute rounded-4 d-none d-lg-block" style="top: -20px; left: -20px; right: 20px; bottom: 20px; z-index: 0;"></div>
             
-            <img src="assets/img/all image/about-pemenuhan-kebutuhan-atk.webp" alt="ATKMalang Team" class="img-fluid rounded-4 shadow-sm w-100 position-relative z-1 about-hero-img">
+            <img src="assets/img/all image/about-pemenuhan-kebutuhan-atk.webp" alt="ATKMalang Team" class="img-fluid rounded-4 shadow-sm w-100 position-relative z-1 about-hero-img" width="600" height="400" loading="lazy" decoding="async">
             
             <!-- Card (Stacked on Mobile, Floating on Desktop) -->
             <div class="z-2 text-white p-3 rounded-3 shadow-lg mt-4 mt-lg-0" style="width: 90%; max-width: 350px; position: relative;" id="hero-floating-card">
@@ -356,7 +356,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
-            <img src="assets/img/all image/layanan-b2b-atk.webp" alt="Layanan B2B" class="img-fluid rounded-4 shadow">
+            <img src="assets/img/all image/layanan-b2b-atk.webp" alt="Layanan B2B" class="img-fluid rounded-4 shadow" width="600" height="400" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-6 ps-lg-5">
             <h2 class="fw-bold mb-4">Layanan End-to-End untuk B2B</h2>
@@ -417,8 +417,11 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" style="max-height: 40px;">
+            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" width="40" height="40" loading="lazy" decoding="async" style="max-height: 40px;">
             <span class="sitename">ATKMalang</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Pasar Besar No. 123</p>
           </a>
           <div class="footer-contact pt-3">
             <p>Jl. Pasar Besar No. 123</p>
@@ -427,10 +430,10 @@
             <p><strong>Email:</strong> <span>info@atkmalang.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/atkmalang"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://web.facebook.com/profile.php?id=61580593539769"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/atkmalang"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@atkmalang"><i class="bi bi-tiktok"></i></a>
+            <a href="https://twitter.com/atkmalang" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61580593539769" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/atkmalang" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/@atkmalang" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -485,23 +488,23 @@
 
   <!-- Scroll Top -->
   <a href="https://wa.me/6288989643555" target="_blank" class="wa-float d-flex align-items-center justify-content-center" aria-label="WhatsApp Kami"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
