@@ -49,6 +49,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <!-- Preload Critical Resources -->
+  <link rel="preload" href="assets/img/blog/pulpen-gel-spesial.webp" as="image" fetchpriority="high">
   <link rel="preload" href="assets/css/main.css" as="style">
   <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
 
@@ -164,11 +165,11 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -181,8 +182,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-atk.webp" alt="ATK Malang">
-        <h1 class="sitename">ATK<span>Malang</span></h1>
+        <img src="assets/img/logo-atk.webp" alt="ATK Malang" width="40" height="40">
+        <span class="sitename">ATK<span>Malang</span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -210,9 +211,11 @@
 
   <main class="main">
 
+
+
     <!-- Page Title Breadcrumbs -->
     <div class="page-title pt-5" data-aos="fade">
-      <nav class="breadcrumbs" style="padding-top: 40px; background: transparent;">
+      <nav class="breadcrumbs" style="padding-top: 40px; background: transparent;" aria-label="Breadcrumb">
         <div class="container">
           <ol>
             <li><a href="index.html">Beranda</a></li>
@@ -234,7 +237,7 @@
               <!-- Featured Image -->
               <div class="article-img mb-4 position-relative">
                 <img src="assets/img/blog/pulpen-gel-spesial.webp" alt="Pulpen Gel Tanda Tangan"
-                  class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 500px; object-fit: cover;">
+                  class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 500px; object-fit: cover;" width="800" height="500" fetchpriority="high">
                 <div class="position-absolute bottom-0 start-0 m-4">
                   <span class="badge bg-primary px-3 py-2 fs-6 rounded-pill shadow">Alat Tulis</span>
                 </div>
@@ -266,7 +269,7 @@
 
                 <!-- Daftar Isi -->
                 <div class="table-of-contents p-4 rounded-3 mb-5 mt-4">
-                  <h4 class="fw-bold mb-3 fs-5"><i class="bi bi-list-ul me-2 text-primary"></i>Daftar Isi</h4>
+                  <h2 class="h4 fw-bold mb-3 fs-5"><i class="bi bi-list-ul me-2 text-primary"></i>Daftar Isi</h2>
                   <ul class="mb-0 list-unstyled">
                     <li class="mb-2"><a href="#zebra-sarasa">Zebra Sarasa Clip</a></li>
                     <li class="mb-2"><a href="#pilot-g2">Pilot G2</a></li>
@@ -299,7 +302,7 @@
 
                 <div class="my-5 text-center">
                   <img src="assets/img/blog/berbagai-macam-pulpen-gel.webp" class="img-fluid rounded-4 shadow-sm"
-                    alt="Berbagai jenis pulpen gel">
+                    alt="Berbagai jenis pulpen gel" loading="lazy" width="800" height="533">
                   <span class="text-muted small d-block mt-2 fst-italic">Pilihlah pulpen gel dengan ketebalan yang
                     sesuai untuk kenyamanan tanda tangan.</span>
                 </div>
@@ -333,9 +336,9 @@
               <div
                 class="author-box d-flex flex-column flex-md-row align-items-center align-items-md-start gap-4 p-4 rounded-4 my-5 shadow-sm">
                 <img src="assets/img/person/indriana.webp" alt="Indriana Safitri" class="rounded-circle shadow-sm"
-                  style="width: 100px; height: 100px; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;">
+                  style="width: 100px; height: 100px; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;" loading="lazy" width="100" height="100">
                 <div class="text-center text-md-start">
-                  <h4 class="fw-bold mb-1">Indriana Safitri (iin)</h4>
+                  <h3 class="h4 fw-bold mb-1">Indriana Safitri (iin)</h3>
                   <p class="text-primary fw-medium mb-3 small">Mahasiswi & Web Developer Part-time</p>
                   <p class="text-muted mb-3" style="font-size: 0.95rem;">Seorang mahasiswi sekaligus pengembang
                     <em>website</em> ini yang gemar membagikan informasi bermanfaat. Iin senang mengeksplorasi tren
@@ -347,15 +350,15 @@
 
               <!-- FAQ Section for Article -->
               <div class="article-faq mb-5">
-                <h3 class="fw-bold mb-4 border-bottom pb-2">FAQ Seputar Pulpen Gel untuk Tanda Tangan</h3>
+                <h2 class="h3 fw-bold mb-4 border-bottom pb-2">FAQ Seputar Pulpen Gel untuk Tanda Tangan</h2>
                 <div class="accordion" id="faqAccordion">
                   <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                    <h2 class="accordion-header" id="headingOne">
+                    <h3 class="accordion-header" id="headingOne">
                       <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Apakah tinta pulpen gel aman dan sah untuk dokumen legal?
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted bg-light">
@@ -366,12 +369,12 @@
                     </div>
                   </div>
                   <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                    <h2 class="accordion-header" id="headingTwo">
+                    <h3 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Mengapa pulpen gel kadang macet padahal tinta masih penuh?
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted bg-light">
@@ -382,12 +385,12 @@
                     </div>
                   </div>
                   <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h3 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Berapa ukuran ketebalan (tip) terbaik untuk tanda tangan?
                       </button>
-                    </h2>
+                    </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                       data-bs-parent="#faqAccordion">
                       <div class="accordion-body text-muted bg-light">
@@ -410,34 +413,34 @@
 
               <!-- Related Posts Widget -->
               <div class="widget related-posts-widget bg-light p-4 rounded-4 shadow-sm mb-4">
-                <h5 class="fw-bold mb-3">Artikel Terkait</h5>
+                <h2 class="h5 fw-bold mb-3">Artikel Terkait</h2>
 
                 <div class="related-item d-flex gap-3 mb-3 pb-3 border-bottom">
-                  <img src="assets/img/blog/set-up-aesthetic-meja-kerja.webp" alt="Thumb" class="rounded-3 object-fit-cover"
-                    style="width: 80px; height: 80px;">
+                  <img src="assets/img/blog/set-up-aesthetic-meja-kerja.webp" alt="Thumbnail Meja Kerja" class="rounded-3 object-fit-cover"
+                    style="width: 80px; height: 80px;" loading="lazy" width="80" height="80">
                   <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="setup-meja-kerja-estetik.html"
-                        class="text-dark text-decoration-none">Setup Meja Kerja Estetik WFH</a></h6>
+                    <h3 class="h6 fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="setup-meja-kerja-estetik.html"
+                        class="text-dark text-decoration-none">Setup Meja Kerja Estetik WFH</a></h3>
                     <small class="text-muted">01 Ags 2026</small>
                   </div>
                 </div>
 
                 <div class="related-item d-flex gap-3 mb-3 pb-3 border-bottom">
-                  <img src="assets/img/blog/daftar-alat-tulis-sd.webp" alt="Thumb" class="rounded-3 object-fit-cover"
-                    style="width: 80px; height: 80px;">
+                  <img src="assets/img/blog/daftar-alat-tulis-sd.webp" alt="Thumbnail Alat Tulis SD" class="rounded-3 object-fit-cover"
+                    style="width: 80px; height: 80px;" loading="lazy" width="80" height="80">
                   <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="daftar-kebutuhan-alat-tulis-wajib.html"
-                        class="text-dark text-decoration-none">Daftar Kebutuhan Alat Tulis Wajib SD</a></h6>
+                    <h3 class="h6 fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="daftar-kebutuhan-alat-tulis-wajib.html"
+                        class="text-dark text-decoration-none">Daftar Kebutuhan Alat Tulis Wajib SD</a></h3>
                     <small class="text-muted">10 Ags 2026</small>
                   </div>
                 </div>
 
                 <div class="related-item d-flex gap-3">
-                  <img src="assets/img/blog/spesial-di-hari-kemerdekaan.webp" alt="Thumb" class="rounded-3 object-fit-cover"
-                    style="width: 80px; height: 80px;">
+                  <img src="assets/img/blog/spesial-di-hari-kemerdekaan.webp" alt="Thumbnail Promo" class="rounded-3 object-fit-cover"
+                    style="width: 80px; height: 80px;" loading="lazy" width="80" height="80">
                   <div>
-                    <h6 class="fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="promo-spesial-hari-kemerdekaan.html"
-                        class="text-dark text-decoration-none">Promo Spesial Hari Kemerdekaan 50%</a></h6>
+                    <h3 class="h6 fw-bold mb-1" style="font-size: 0.95rem; line-height: 1.4;"><a href="promo-spesial-hari-kemerdekaan.html"
+                        class="text-dark text-decoration-none">Promo Spesial Hari Kemerdekaan 50%</a></h3>
                     <small class="text-muted">25 Jul 2026</small>
                   </div>
                 </div>
@@ -447,7 +450,7 @@
               <div class="widget cta-widget bg-primary text-white p-4 rounded-4 shadow-sm text-center mt-4 mb-5"
                 style="background: linear-gradient(135deg, var(--accent-color), #17a2b8) !important;">
                 <i class="bi bi-chat-dots fs-1 mb-2 d-block"></i>
-                <h5 class="fw-bold mb-3">Punya Pertanyaan?</h5>
+                <h2 class="h5 fw-bold mb-3">Punya Pertanyaan?</h2>
                 <p class="mb-4 small">Diskusikan kebutuhan ATK perusahaan Anda dengan tim kami dan dapatkan penawaran
                   harga terbaik hari ini.</p>
                 <a href="https://wa.me/6288989643555"
@@ -469,7 +472,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" style="max-height: 40px;">
+            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" style="max-height: 40px;" loading="lazy" width="40" height="40">
             <span class="sitename">ATKMalang</span>
           </a>
           <div class="footer-contact pt-3">
@@ -479,15 +482,15 @@
             <p><strong>Email:</strong> <span>info@atkmalang.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/atkmalang"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://web.facebook.com/profile.php?id=61580593539769"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/atkmalang"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@atkmalang"><i class="bi bi-tiktok"></i></a>
+            <a href="https://twitter.com/atkmalang" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61580593539769" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/atkmalang" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@atkmalang" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Tautan Pintas</h4>
+          <h2 class="h4">Tautan Pintas</h2>
           <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="about.html">Tentang Kami</a></li>
@@ -498,7 +501,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Paket Unggulan</h4>
+          <h2 class="h4">Paket Unggulan</h2>
           <ul>
             <li><a href="paket-pelajar.html">Paket Pelajar</a></li>
             <li><a href="paket-basic-kantor.html">Paket Basic Kantor</a></li>
@@ -508,7 +511,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Kategori Populer</h4>
+          <h2 class="h4">Kategori Populer</h2>
           <ul>
             <li><a href="mesin-elektronik-kantor.html">Mesin & Elektronik Kantor</a></li>
             <li><a href="pengadaan-kontrak-supply.html">Pengadaan &amp; Kontrak Supply</a></li>
@@ -517,7 +520,7 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Jam Operasional</h4>
+          <h2 class="h4">Jam Operasional</h2>
           <ul>
             <li><span>Senin - Jumat: 08:00 - 20:00</span></li>
             <li><span>Sabtu: 08:00 - 18:00</span></li>
@@ -537,24 +540,24 @@
 
   <!-- Scroll Top -->
   <a href="https://wa.me/6288989643555" target="_blank" class="wa-float d-flex align-items-center justify-content-center" aria-label="WhatsApp Kami"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 

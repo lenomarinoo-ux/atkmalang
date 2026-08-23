@@ -199,7 +199,7 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" tabindex="0" aria-label="Toggle Mobile Navigation"></i>
       </nav>
 
       <a class="btn-getstarted" href="https://wa.me/6288989643555">Hubungi Kami</a>
@@ -238,7 +238,7 @@
         <div class="row gy-4 align-items-center">
           <div class="col-lg-6">
             <div class="position-relative p-4 rounded-4 bg-light">
-              <img src="assets/img/produk/paket-eksekutif-kantor-atk.webp" alt="Paket Eksekutif Lengkap" class="img-fluid rounded-3 shadow-sm w-100" style="object-fit: cover; aspect-ratio: 4/3;">
+              <img src="assets/img/produk/paket-eksekutif-kantor-atk.webp" alt="Paket Eksekutif Lengkap" class="img-fluid rounded-3 shadow-sm w-100" width="400" height="300" loading="lazy" decoding="async" style="object-fit: cover; aspect-ratio: 4/3;">
               <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-4 fs-6">Eksklusif</span>
             </div>
           </div>
@@ -372,10 +372,10 @@
           <div class="col-lg-7 order-1 order-lg-2">
             <div class="row g-3">
               <div class="col-6">
-                <img src="assets/img/produk/paket-eksekutih-kantor.webp" alt="Pulpen Premium" class="img-fluid rounded-4 shadow-sm w-100" style="object-fit: cover; aspect-ratio: 1/1;">
+                <img src="assets/img/produk/paket-eksekutih-kantor.webp" alt="Pulpen Premium" class="img-fluid rounded-4 shadow-sm w-100" width="400" height="400" loading="lazy" decoding="async" style="object-fit: cover; aspect-ratio: 1/1;">
               </div>
               <div class="col-6">
-                <img src="assets/img/produk/paket-eksekutif-premium-kantor.webp" alt="Koleksi Pulpen Eksekutif" class="img-fluid rounded-4 shadow-sm w-100 mt-4" style="object-fit: cover; aspect-ratio: 1/1;">
+                <img src="assets/img/produk/paket-eksekutif-premium-kantor.webp" alt="Koleksi Pulpen Eksekutif" class="img-fluid rounded-4 shadow-sm w-100 mt-4" width="400" height="400" loading="lazy" decoding="async" style="object-fit: cover; aspect-ratio: 1/1;">
               </div>
             </div>
           </div>
@@ -412,8 +412,11 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" style="max-height: 40px;">
+            <img src="assets/img/logo-atk.webp" alt="ATK Malang" class="me-2" width="40" height="40" loading="lazy" decoding="async" style="max-height: 40px;">
             <span class="sitename">ATKMalang</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Pasar Besar No. 123</p>
           </a>
           <div class="footer-contact pt-3">
             <p>Jl. Pasar Besar No. 123</p>
@@ -422,10 +425,10 @@
             <p><strong>Email:</strong> <span>info@atkmalang.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://twitter.com/atkmalang"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://web.facebook.com/profile.php?id=61580593539769"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/atkmalang"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@atkmalang"><i class="bi bi-tiktok"></i></a>
+            <a href="https://twitter.com/atkmalang" aria-label="Twitter"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61580593539769" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/atkmalang" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.tiktok.com/@atkmalang" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -480,24 +483,23 @@
 
   <!-- Scroll Top -->
   <a href="https://wa.me/6288989643555" target="_blank" class="wa-float d-flex align-items-center justify-content-center" aria-label="WhatsApp Kami"><i class="bi bi-whatsapp"></i></a>
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Kembali ke atas"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/php-email-form/validate.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 </html>
-
