@@ -1,4 +1,4 @@
-Thanks for downloading this template!
+﻿Thanks for downloading this template!
 
 Template Name: atkmalang
 Template URL: https://atkmalang.web.id/
