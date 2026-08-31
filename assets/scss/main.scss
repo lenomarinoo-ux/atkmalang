@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // out: ../css/main.css
 // You can use the "Easy Compile" VS Code extension to easily compile the scss files https://marketplace.visualstudio.com/items?itemName=refgd.easy-compile
 
@@ -7,16 +6,6 @@
 @import './layouts/_general.scss';
 @import './layouts/_header.scss';
 @import './layouts/_navmenu.scss';
-=======
-// out: ../css/main.css
-// You can use the "Easy Compile" VS Code extension to easily compile the scss files https://marketplace.visualstudio.com/items?itemName=refgd.easy-compile
-
-@import './_variables.scss';
-
-@import './layouts/_general.scss';
-@import './layouts/_header.scss';
-@import './layouts/_navmenu.scss';
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
 @import './layouts/_footer.scss';
 @import './layouts/_preloader.scss';
 @import './layouts/_scrolltop.scss';

@@ -2,8 +2,4 @@
 Allow: /
 Disallow: /assets/vendor/
 
-<<<<<<< HEAD
 Sitemap: https://atkmalang.web.id/sitemap.xml
-=======
-Sitemap: https://atkmalang.web.id/sitemap.xml
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32

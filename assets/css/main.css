@@ -6483,11 +6483,7 @@ body.about-page .main {
     radial-gradient(at 80% 0%, hsla(28,100%,74%,0.15) 0px, transparent 50%),
     radial-gradient(at 0% 50%, hsla(355,100%,93%,0.1) 0px, transparent 50%);
 }
-<<<<<<< HEAD
 
-=======
-
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
 
 /* ATKMalang Custom Layout CSS */
 .bg-primary-light {
@@ -6547,11 +6543,7 @@ body.about-page .main {
 .text-primary {
   color: var(--accent-color) !important;
 }
-<<<<<<< HEAD
 
-=======
-
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
 
 /* Custom About Page Styles */
 .about-page main p, .about-page main ul li {
@@ -6587,11 +6579,7 @@ body.about-page .main {
 }
 .bg-white {
   background-color: #ffffff !important;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
 
 /* Custom Background Patterns */
 .bg-radial-green {
@@ -6614,11 +6602,7 @@ body.about-page .main {
   background-color: #ffffff !important;
   background-image: radial-gradient(color-mix(in srgb, var(--accent-color), transparent 50%) 2px, transparent 2px) !important;
   background-size: 30px 30px !important;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
 
 .detail-link {
   color: #6c757d;
@@ -6802,8 +6786,4 @@ body.about-page .main {
 .service-content.h-100 > div:last-child,
 .service-card > a.service-link:last-child {
   margin-top: auto !important;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6f87bd04acfd9cab1015e95a8ac3fcf64a6bac32
