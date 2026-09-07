@@ -49,8 +49,8 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
   <!-- Preload Critical Resources -->
-  <link rel="preload" href="assets/img/all%20image/alat-tulis-hero-index.webp" as="image" fetchpriority="high">
-  <link rel="preload" href="assets/css/main.css" as="style">
+  <link rel="preload" href="assets/img/all image/alat-tulis-hero-index.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/css/main.min.css" as="style">
   <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
 
   <!-- JSON-LD Advanced Schema (Organization, LocalBusiness, WebSite, WebPage, BreadcrumbList) -->
@@ -171,9 +171,7 @@
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
+  <link href="assets/css/main.min.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -183,7 +181,7 @@
 
       <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo-atk.webp" alt="ATK Malang" width="40" height="40">
+        <img src="assets/img/logo-atk.webp" alt="ATK Malang" width="40" height="40" loading="lazy" decoding="async">
         <span class="sitename">ATK<span>Malang</span></span>
       </a>
 
@@ -1175,7 +1173,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.min.js" defer></script>
 
 </body>
 
