@@ -6787,3 +6787,18 @@ body.about-page .main {
 .service-card > a.service-link:last-child {
   margin-top: auto !important;
 }
+/* Styling for Details/Summary TOC */
+details.table-of-contents summary {
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+}
+details.table-of-contents summary::-webkit-details-marker {
+  display: none;
+}
+details.table-of-contents[open] summary .bi-chevron-down {
+  transform: rotate(180deg);
+}
+details.table-of-contents summary .bi-chevron-down {
+  transition: transform 0.3s ease;
+}
